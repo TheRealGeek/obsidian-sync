@@ -45,21 +45,21 @@ If you don’t have Git installed, follow these steps:
 
 Once installed, open your terminal (Command Prompt, PowerShell, or macOS Terminal) and verify installation by running:
 
-git --version
+```git --version```
 
 ## Basic Git Commands
 
 Here are three essential Git commands that you’ll use frequently:
 
-git status
+```git status```
 
 This command shows the current state of your repository. It tells you which files have been modified, added, or staged for commit.git status
 
-git pull
+```git pull```
 
 This command fetches the latest changes from the remote repository (GitHub) and updates your local repository.
 
-git push
+```git push```
 
 After making changes, you need to upload them to GitHub using git push. This command sends your committed changes from your local repository to the remote repository.
 
@@ -116,11 +116,11 @@ To avoid entering your password every time you sync, you can set up SSH authenti
 
 - Generate an SSH key by running:
 
-ssh-keygen -t ed25519 -C "your-email@example.com"
+```ssh-keygen -t ed25519 -C "your-email@example.com"```
 
 - Copy the SSH key using:
 
-cat ~/.ssh/id_ed25519.pub
+```cat ~/.ssh/id_ed25519.pub```
 
 - Go to GitHub, navigate to **Settings > SSH and GPG keys**, and add the copied key.
 
@@ -159,22 +159,22 @@ Syncing on mobile is slightly more complicated but still doable.
 - iSH App
 - Open iSH and install Git using:
 
-apk add git
+```apk add git```
 
 - Create a folder for your obsidian notes :
 
-mkdir obsidian
+```mkdir obsidian```
 
 - Run mount command to mount the obsidian vault folder
 
-mount -t ios . obsidian
+```mount -t ios . obsidian```
 
 - A file picker will show up. Choose the folder with your local vault.
 - Then use the following commands:
 
-cd obsidian  
-rm -rf .  
-git clone YOUR-REPO-URL .
+```cd obsidian```  
+```rm -rf . ```
+```git clone YOUR-REPO-URL .```
 
 Once this step is done, you will see your notes in the Obsidian application.
 
